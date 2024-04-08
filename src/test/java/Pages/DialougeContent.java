@@ -68,6 +68,56 @@ public class DialougeContent extends ParentPage{
 
     @FindBy(xpath = "//h1[text()='Error!']")
     public WebElement errorText;
+
+    @FindBy(xpath = "//a[text()='Bill Pay']")
+    public WebElement payBill;
+
+    @FindBy(xpath = "//input[@name='payee.name']")
+    public WebElement payName;
+
+    @FindBy(xpath = "//input[@name='payee.address.street']")
+    public WebElement payAddress;
+
+    @FindBy(xpath = "//input[@name='payee.address.city']")
+    public WebElement payCity;
+
+    @FindBy(xpath = "//input[@name='payee.address.state']")
+    public WebElement payState;
+    @FindBy(xpath = "//input[@name='payee.address.zipCode']")
+    public WebElement payZipCode;
+
+    @FindBy(xpath = "//input[@name='payee.phoneNumber']")
+    public WebElement payPhoneNumber;
+
+    @FindBy(xpath = "//input[@name='payee.accountNumber']")
+    public WebElement payAccount;
+
+    @FindBy(xpath = "//input[@name='verifyAccount']")
+    public WebElement payVerifyAccount;
+
+    @FindBy(xpath = "//input[@name='amount']")
+    public WebElement payAmount;
+
+    @FindBy(xpath = "//input[@value='Send Payment']")
+    public WebElement sendPayment;
+
+    @FindBy(xpath = "//h1[text()='Bill Payment Complete']")
+    public WebElement paymentCompleteText;
+
+    @FindBy(xpath = "//span[@id='fromAccountId']")
+    public WebElement accountIdFatura;
+
+    @FindBy(xpath = "//a[text()='Accounts Overview']")
+    public WebElement accountOverview;
+
+    @FindBy(xpath = "//a[@class='ng-binding']")
+    public WebElement accountOverviewAccountId;
+
+
+
+
+
+
     public WebElement getWebElement(String strElement) {
 
         switch (strElement) {
@@ -75,13 +125,23 @@ public class DialougeContent extends ParentPage{
             case "loginUsername" : return this.loginUsername;
             case "loginPass":return this.loginPass;
             case "logout":return this.logout;
-            //case "payeeState":return this.payeeState;
-            //case "payeeZipCode":return this.payeeZipCode;
-            //case "payeePhoneNumber":return this.payeePhoneNumber;
-            //case "payeeAccount":return this.payeeAccount;
-            //case "verifyAccount":return this.payeeVerifyAccount;
-            //case "payeeAmount":return this.payeeAmount;
-            //case "sendPayment":return this.sendPayment;
+            case "payBill":return this.payBill;
+            case "payName":return this.payName;
+            case "payAddress":return this.payAddress;
+            case "payCity":return this.payCity;
+            case "payState":return this.payState;
+            case "payZipCode":return this.payZipCode;
+            case "payPhoneNumber":return this.payPhoneNumber;
+            case "payAccount":return this.payAccount;
+            case "payVerifyAccount":return this.payVerifyAccount;
+            case "payAmount":return this.payAmount;
+
+
+
+
+
+
+
 
         }
 
