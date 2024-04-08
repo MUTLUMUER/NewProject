@@ -20,8 +20,8 @@ public class Hooks {
 //          TakesScreenshot ts=(TakesScreenshot) GWD.getDriver();
 //          byte[] hafizadakiHali= ts.getScreenshotAs(OutputType.BYTES);
 //          senaryo.attach(hafizadakiHali, "image/png", "screenshot name");
-
             GWD.quitDriver();
         }
+        GWD.quitDriver();
     }
 }

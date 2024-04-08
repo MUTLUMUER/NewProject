@@ -36,10 +36,10 @@ public class GWD {
         }
 
         //driver kapat
-       // if (driver != null){ //driver var ise
-       //     driver.quit();
-       //     driver=null;
-       // }
+       if (driver != null){ //driver var ise
+            driver.quit();
+            driver=null;
+        }
 
     }
 

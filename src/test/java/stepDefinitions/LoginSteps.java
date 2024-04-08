@@ -15,7 +15,7 @@ public class LoginSteps {
     public void enterUsernameAndPasswordClickLoginButton() {
         dc.mySendKeys(dc.loginUsername,"sdetears");
         dc.mySendKeys(dc.loginPass,"11111");
-        //dc.myClick(dc.loginButton);
+        dc.myClick(dc.loginButton);
 
     }
 

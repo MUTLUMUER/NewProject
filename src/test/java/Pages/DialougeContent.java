@@ -58,7 +58,7 @@ public class DialougeContent extends ParentPage{
 
     @FindBy(xpath = "//input[@name='password']")
     public WebElement loginPass;
-    @FindBy(xpath = "//h1[@class='title']")
+    @FindBy(xpath = "//b[text()='Welcome']")
     public WebElement welcomeText;
 
     //@FindBy(xpath = "//a[contains(text(),'Log Out')]")

@@ -32,7 +32,7 @@ public class MySteps {
         dc.mySendKeys(dc.zipCode, "12345");
         dc.mySendKeys(dc.phone, "12345678");
         dc.mySendKeys(dc.ssn, "00000");
-        dc.mySendKeys(dc.username, "sdetea");
+        dc.mySendKeys(dc.username, "sdetears");
         dc.mySendKeys(dc.pass, "11111");
         dc.mySendKeys(dc.confirmPass, "11111");
         dc.myClick(dc.submit);
